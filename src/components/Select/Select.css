@@ -1,0 +1,14 @@
+.select {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.select__label {
+    margin-bottom: 1rem;
+}
+.select__option {
+    padding-left: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    outline: none;
+}
