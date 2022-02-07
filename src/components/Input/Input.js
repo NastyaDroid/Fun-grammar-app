@@ -1,7 +1,7 @@
 import React from 'react';
 import './Input.css';
 
-const Input = ({ word, onChange }) => {
+const Input = ({ value, onChange }) => {
     return (
         <div className='input'>
             <label className='input__label' htmlFor="word">Введите существительное в единственном числе</label>
@@ -10,7 +10,7 @@ const Input = ({ word, onChange }) => {
             type="text" 
             id="word" 
             name="word"
-            value={word}
+            value={value}
             onChange={onChange}/>
         </div>
     )
