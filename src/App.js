@@ -44,9 +44,9 @@ const App = () => {
     return string.slice(0, -1);
   }
   function findEnding(string) {
-    var result = string.match(/[а,я,о,е,ь]$/gm);
+    var result = string.match(/[аяоеь]$/gm);
     if (result) {
-      return string.match(/[а,я,о,е,ь]$/gm).toString();
+      return result.toString();
     } else {
       return result;
     }
@@ -84,6 +84,7 @@ const App = () => {
         : thirdDeclension(string) ? (stringMaker(string) + 'ь')
           : string;
   }
+
   function ablativeCase(string) {
     return firstDeclension(string) ? (stringMaker(string) + 'ой')
       : secondDeclension(string) ? (stringMaker(string) + 'ом')
