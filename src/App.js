@@ -11,7 +11,7 @@ const App = () => {
   const [grammarCase, setGrammarCase] = useState(word);
 
 
-  function makeCase(event) {
+  const makeCase = (event) => {
     var value = event.target.value;
     switch(value) {
       case '1' :
